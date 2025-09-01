@@ -1,0 +1,21 @@
+insert into Categoria (nome) values ('Bebidas');
+insert into Categoria (nome) values ('Frutas');
+insert into Categoria (nome) values ('Carnes');
+insert into Categoria (nome) values ('Doces');
+insert into Categoria (nome) values ('Legumes');
+insert into Categoria (nome) values ('Padaria e confeitaria');
+insert into Categoria (nome) values ('Congelados');
+insert into Categoria (nome) values ('Salgadinhos e snacks');
+insert into Categoria (nome) values ('Enlatados e conservas');
+insert into Categoria (nome) values ('Mercearia seca');
+
+insert into Produto (nome, preco, quantidade, validade, categoria_codigo) values ('Coca Cola 2 Litros', 12.00, 15, '2025-12-20',1);
+insert into Produto (nome, preco, quantidade, validade, categoria_codigo) values ('maça', 5.00, 10, '2025-12-20',2);
+insert into Produto (nome, preco, quantidade, validade, categoria_codigo) values ('Picanha', 120.00, 1, '2026-12-20',3);
+insert into Produto (nome, preco, quantidade, validade, categoria_codigo) values ('Chocolate', 10.00, 5, '2025-12-20',4);
+insert into Produto (nome, preco, quantidade, validade, categoria_codigo) values ('Abobrinha', 5.00, 1, '2025-12-20',5);
+insert into Produto (nome, preco, quantidade, validade, categoria_codigo) values ('Bolo', 40.00, 1, '2025-12-20',6);
+insert into Produto (nome, preco, quantidade, validade, categoria_codigo) values ('Pizza', 12.00, 1, '2025-12-20',7);
+insert into Produto (nome, preco, quantidade, validade, categoria_codigo) values ('Batata Fritas', 15.00, 1, '2025-12-20',8);
+insert into Produto (nome, preco, quantidade, validade, categoria_codigo) values ('Sardinha', 12.00, 1, '2025-12-20',9);
+insert into Produto (nome, preco, quantidade, validade, categoria_codigo) values ('Arroz', 12.00, 1, '2025-12-20',10);
