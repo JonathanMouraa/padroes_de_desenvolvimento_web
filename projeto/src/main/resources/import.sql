@@ -66,7 +66,7 @@ insert into Funcionario (nome, cpf, cargo, salario) values ('Thiago Martins', '1
 
 -- VENDA
 
-insert into Venda (data_venda, cliente_codigo, funcionario_codigo, valor_total) values ('2025-09-01', 1, 1, 24.00);
+insert into Venda (codigo, horario, valorTotal, quantidadeTotal) values (1, '23:00', 24.00, 3;
 insert into Venda (data_venda, cliente_codigo, funcionario_codigo, valor_total) values ('2025-09-02', 2, 2, 130.00);
 insert into Venda (data_venda, cliente_codigo, funcionario_codigo, valor_total) values ('2025-09-03', 3, 3, 52.00);
 insert into Venda (data_venda, cliente_codigo, funcionario_codigo, valor_total) values ('2025-09-04', 4, 4, 80.00);
