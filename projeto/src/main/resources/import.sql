@@ -1,5 +1,5 @@
 
--- Categoria
+-- TABELA CATEGORIA
 
 insert into Categoria (nome) values ('Bebidas');
 insert into Categoria (nome) values ('Frutas');
@@ -12,10 +12,11 @@ insert into Categoria (nome) values ('Salgadinhos e snacks');
 insert into Categoria (nome) values ('Enlatados e conservas');
 insert into Categoria (nome) values ('Mercearia seca');
 
- -- produto
+
+-- TABELA PRODUTO
 
 insert into Produto (nome, preco, quantidade, validade, categoria_codigo) values ('Coca Cola 2 Litros', 12.00, 15, '2025-12-20',1);
-insert into Produto (nome, preco, quantidade, validade, categoria_codigo) values ('maça', 5.00, 10, '2025-12-20',2);
+insert into Produto (nome, preco, quantidade, validade, categoria_codigo) values ('Maçã', 5.00, 10, '2025-12-20',2);
 insert into Produto (nome, preco, quantidade, validade, categoria_codigo) values ('Picanha', 120.00, 1, '2026-12-20',3);
 insert into Produto (nome, preco, quantidade, validade, categoria_codigo) values ('Chocolate', 10.00, 5, '2025-12-20',4);
 insert into Produto (nome, preco, quantidade, validade, categoria_codigo) values ('Abobrinha', 5.00, 1, '2025-12-20',5);
@@ -25,67 +26,71 @@ insert into Produto (nome, preco, quantidade, validade, categoria_codigo) values
 insert into Produto (nome, preco, quantidade, validade, categoria_codigo) values ('Sardinha', 12.00, 1, '2025-12-20',9);
 insert into Produto (nome, preco, quantidade, validade, categoria_codigo) values ('Arroz', 12.00, 1, '2025-12-20',10);
 
--- cliente
+-- TABELA CLIENTE
 
-insert into Cliente (nome, cpf, telefone, email) values ('João Silva', '11111111111', '14999990001', 'joao@email.com');
-insert into Cliente (nome, cpf, telefone, email) values ('Maria Oliveira', '22222222222', '14999990002', 'maria@email.com');
-insert into Cliente (nome, cpf, telefone, email) values ('Carlos Souza', '33333333333', '14999990003', 'carlos@email.com');
-insert into Cliente (nome, cpf, telefone, email) values ('Ana Santos', '44444444444', '14999990004', 'ana@email.com');
-insert into Cliente (nome, cpf, telefone, email) values ('Pedro Lima', '55555555555', '14999990005', 'pedro@email.com');
-insert into Cliente (nome, cpf, telefone, email) values ('Fernanda Costa', '66666666666', '14999990006', 'fernanda@email.com');
-insert into Cliente (nome, cpf, telefone, email) values ('Ricardo Alves', '77777777777', '14999990007', 'ricardo@email.com');
-insert into Cliente (nome, cpf, telefone, email) values ('Juliana Pereira', '88888888888', '14999990008', 'juliana@email.com');
-insert into Cliente (nome, cpf, telefone, email) values ('Paulo Rocha', '99999999999', '14999990009', 'paulo@email.com');
-insert into Cliente (nome, cpf, telefone, email) values ('Camila Martins', '10101010101', '14999990010', 'camila@email.com');
+insert into Cliente (nome, cpf, codigo) values ('João Silva', '11111111111', 1);
+insert into Cliente (nome, cpf, codigo) values ('Maria Oliveira', '22222222222', 2);
+insert into Cliente (nome, cpf, codigo) values ('Carlos Souza', '33333333333', 3);
+insert into Cliente (nome, cpf, codigo) values ('Ana Santos', '44444444444', 4);
+insert into Cliente (nome, cpf, codigo) values ('Pedro Lima', '55555555555', 5);
+insert into Cliente (nome, cpf, codigo) values ('Fernanda Costa', '66666666666', 6);
+insert into Cliente (nome, cpf, codigo) values ('Ricardo Alves', '77777777777', 7);
+insert into Cliente (nome, cpf, codigo) values ('Juliana Pereira', '88888888888', 8);
+insert into Cliente (nome, cpf, codigo) values ('Paulo Rocha', '99999999999', 9);
+insert into Cliente (nome, cpf, codigo) values ('Camila Martins', '10101010101', 10);
 
--- fabricante
 
-insert into Fabricante (nome, cnpj, telefone) values ('Coca Cola Brasil', '11111111000101', '1133334001');
-insert into Fabricante (nome, cnpj, telefone) values ('Nestlé', '22222222000102', '1133334002');
-insert into Fabricante (nome, cnpj, telefone) values ('Friboi', '33333333000103', '1133334003');
-insert into Fabricante (nome, cnpj, telefone) values ('Perdigão', '44444444000104', '1133334004');
-insert into Fabricante (nome, cnpj, telefone) values ('Sadia', '55555555000105', '1133334005');
-insert into Fabricante (nome, cnpj, telefone) values ('Bauducco', '66666666000106', '1133334006');
-insert into Fabricante (nome, cnpj, telefone) values ('Yoki', '77777777000107', '1133334007');
-insert into Fabricante (nome, cnpj, telefone) values ('Pepsico', '88888888000108', '1133334008');
-insert into Fabricante (nome, cnpj, telefone) values ('Heinz', '99999999000109', '1133334009');
-insert into Fabricante (nome, cnpj, telefone) values ('Italac', '10101010000110', '1133334010');
+-- TABELA FABRICANTE
 
- -- funcionario
+insert into Fabricante (nome, codigo, categoria_codigo) values ('Coca Cola Brasil', 111, 1);
+insert into Fabricante (nome, codigo, categoria_codigo) values ('Nestlé', 222, 2);
+insert into Fabricante (nome, codigo, categoria_codigo) values ('Friboi', 333, 3);
+insert into Fabricante (nome, codigo, categoria_codigo) values ('Perdigão', 444, 4);
+insert into Fabricante (nome, codigo, categoria_codigo) values ('Sadia', 555, 5);
+insert into Fabricante (nome, codigo, categoria_codigo) values ('Bauducco', 666, 6);
+insert into Fabricante (nome, codigo, categoria_codigo) values ('Yoki', 777, 7);
+insert into Fabricante (nome, codigo, categoria_codigo) values ('Pepsico', 888, 8);
+insert into Fabricante (nome, codigo, categoria_codigo) values ('Heinz', 999, 9);
+insert into Fabricante (nome, codigo, categoria_codigo) values ('Italac', 101, 10);
 
- insert into Funcionario (nome, cpf, cargo, salario) values ('Ana Pereira', '11122233344', 'Caixa', 2000.00);
-insert into Funcionario (nome, cpf, cargo, salario) values ('Pedro Santos', '22233344455', 'Vendedor', 2500.00);
-insert into Funcionario (nome, cpf, cargo, salario) values ('Fernanda Lima', '33344455566', 'Gerente', 4000.00);
-insert into Funcionario (nome, cpf, cargo, salario) values ('Lucas Almeida', '44455566677', 'Repositor', 1800.00);
-insert into Funcionario (nome, cpf, cargo, salario) values ('Mariana Rocha', '55566677788', 'Caixa', 2100.00);
-insert into Funcionario (nome, cpf, cargo, salario) values ('André Costa', '66677788899', 'Vendedor', 2600.00);
-insert into Funcionario (nome, cpf, cargo, salario) values ('Juliana Melo', '77788899900', 'Gerente', 4200.00);
-insert into Funcionario (nome, cpf, cargo, salario) values ('Rafael Oliveira', '88899900011', 'Repositor', 1850.00);
-insert into Funcionario (nome, cpf, cargo, salario) values ('Beatriz Souza', '99900011122', 'Caixa', 2050.00);
-insert into Funcionario (nome, cpf, cargo, salario) values ('Thiago Martins', '10111213141', 'Supervisor', 3500.00);
 
--- VENDA
+-- TABELA FUNCIONARIO
 
-insert into Venda (codigo, horario, valorTotal, quantidadeTotal) values (1, '23:00', 24.00, 3;
-insert into Venda (data_venda, cliente_codigo, funcionario_codigo, valor_total) values ('2025-09-02', 2, 2, 130.00);
-insert into Venda (data_venda, cliente_codigo, funcionario_codigo, valor_total) values ('2025-09-03', 3, 3, 52.00);
-insert into Venda (data_venda, cliente_codigo, funcionario_codigo, valor_total) values ('2025-09-04', 4, 4, 80.00);
-insert into Venda (data_venda, cliente_codigo, funcionario_codigo, valor_total) values ('2025-09-05', 5, 5, 45.00);
-insert into Venda (data_venda, cliente_codigo, funcionario_codigo, valor_total) values ('2025-09-06', 6, 6, 110.00);
-insert into Venda (data_venda, cliente_codigo, funcionario_codigo, valor_total) values ('2025-09-07', 7, 7, 200.00);
-insert into Venda (data_venda, cliente_codigo, funcionario_codigo, valor_total) values ('2025-09-08', 8, 8, 75.00);
-insert into Venda (data_venda, cliente_codigo, funcionario_codigo, valor_total) values ('2025-09-09', 9, 9, 95.00);
-insert into Venda (data_venda, cliente_codigo, funcionario_codigo, valor_total) values ('2025-09-10', 10, 10, 150.00);
+insert into Funcionario (nome, cpf, codigo) values ('Ana Pereira', '11122233344', 200);
+insert into Funcionario (nome, cpf, codigo) values ('Pedro Santos', '22233344455', 250);
+insert into Funcionario (nome, cpf, codigo) values ('Fernanda Lima', '33344455566', 400);
+insert into Funcionario (nome, cpf, codigo) values ('Lucas Almeida', '44455566677', 180);
+insert into Funcionario (nome, cpf, codigo) values ('Mariana Rocha', '55566677788', 210);
+insert into Funcionario (nome, cpf, codigo) values ('André Costa', '66677788899', 260);
+insert into Funcionario (nome, cpf, codigo) values ('Juliana Melo', '77788899900', 420);
+insert into Funcionario (nome, cpf, codigo) values ('Rafael Oliveira', '88899900011', 185);
+insert into Funcionario (nome, cpf, codigo) values ('Beatriz Souza', '99900011122', 205);
+insert into Funcionario (nome, cpf, codigo) values ('Thiago Martins', '10111213141', 350);
 
--- ITEMVENDA
 
-insert into ItemVenda (venda_codigo, produto_codigo, quantidade, preco_unitario) values (1, 1, 2, 12.00);
-insert into ItemVenda (venda_codigo, produto_codigo, quantidade, preco_unitario) values (2, 5, 1, 120.00);
-insert into ItemVenda (venda_codigo, produto_codigo, quantidade, preco_unitario) values (2, 3, 2, 5.00);
-insert into ItemVenda (venda_codigo, produto_codigo, quantidade, preco_unitario) values (3, 7, 2, 10.00);
-insert into ItemVenda (venda_codigo, produto_codigo, quantidade, preco_unitario) values (3, 4, 1, 4.50);
-insert into ItemVenda (venda_codigo, produto_codigo, quantidade, preco_unitario) values (4, 2, 10, 8.00);
-insert into ItemVenda (venda_codigo, produto_codigo, quantidade, preco_unitario) values (5, 8, 1, 40.00);
-insert into ItemVenda (venda_codigo, produto_codigo, quantidade, preco_unitario) values (6, 10, 2, 25.00);
-insert into ItemVenda (venda_codigo, produto_codigo, quantidade, preco_unitario) values (7, 1, 5, 12.00);
-insert into ItemVenda (venda_codigo, produto_codigo, quantidade, preco_unitario) values (8, 6, 3, 25.00);
+-- TABELA VENDA
+
+insert into Venda (codigo, horario, valorTotal, quantidadeTotal, cliente_codigo, funcionario_codigo) values (1, 23:00, 24.00, 3, 1, 200);
+insert into Venda (codigo, horario, valorTotal, quantidadeTotal, cliente_codigo, funcionario_codigo) values (2, 20:00, 30.00, 5, 2, 250);
+insert into Venda (codigo, horario, valorTotal, quantidadeTotal, cliente_codigo, funcionario_codigo) values (3, 19:00, 25.00, 2, 3, 400);
+insert into Venda (codigo, horario, valorTotal, quantidadeTotal, cliente_codigo, funcionario_codigo) values (4, 20:30, 23.00, 3, 4, 180);
+insert into Venda (codigo, horario, valorTotal, quantidadeTotal, cliente_codigo, funcionario_codigo) values (5, 19:10, 15.00, 6, 5, 210);
+insert into Venda (codigo, horario, valorTotal, quantidadeTotal, cliente_codigo, funcionario_codigo) values (6, 23:29, 24.00, 8, 6, 260);
+insert into Venda (codigo, horario, valorTotal, quantidadeTotal, cliente_codigo, funcionario_codigo) values (7, 13:14, 26.00, 9, 7, 420);
+insert into Venda (codigo, horario, valorTotal, quantidadeTotal, cliente_codigo, funcionario_codigo) values (8, 09:00, 14.00, 4, 8, 185);
+insert into Venda (codigo, horario, valorTotal, quantidadeTotal, cliente_codigo, funcionario_codigo) values (9, 12:00, 46.00, 6, 9, 205);
+insert into Venda (codigo, horario, valorTotal, quantidadeTotal, cliente_codigo, funcionario_codigo) values (10, 14:15, 76.00, 3, 10, 350);
+
+
+-- TABELA ITEMVENDA
+
+insert into ItemVenda (venda_codigo, valorParcial, quantidadeParcial, produto_codigo) values (1, 1, 2, 1);
+insert into ItemVenda (venda_codigo, valorParcial, quantidadeParcial, produto_codigo) values (2, 3, 1, 5);
+insert into ItemVenda (venda_codigo, valorParcial, quantidadeParcial, produto_codigo) values (3, 5, 3, 2);
+insert into ItemVenda (venda_codigo, valorParcial, quantidadeParcial, produto_codigo) values (4, 9, 4, 6);
+insert into ItemVenda (venda_codigo, valorParcial, quantidadeParcial, produto_codigo) values (5, 7, 6, 4);
+insert into ItemVenda (venda_codigo, valorParcial, quantidadeParcial, produto_codigo) values (6, 4, 5, 9);
+insert into ItemVenda (venda_codigo, valorParcial, quantidadeParcial, produto_codigo) values (7, 1, 8, 8);
+insert into ItemVenda (venda_codigo, valorParcial, quantidadeParcial, produto_codigo) values (8, 3, 7, 7);
+insert into ItemVenda (venda_codigo, valorParcial, quantidadeParcial, produto_codigo) values (9, 8, 5, 3);
+insert into ItemVenda (venda_codigo, valorParcial, quantidadeParcial, produto_codigo) values (10, 4, 1, 10);
