@@ -7,7 +7,7 @@ import jakarta.persistence.Id;
 import jakarta.persistence.ManyToOne;
 import jakarta.persistence.OneToMany;
 import jakarta.persistence.CascadeType;
-import java.time.LocalDateTime;
+import java.time.LocalTime;
 import java.math.BigDecimal;
 import java.util.List;
 import io.quarkus.hibernate.orm.panache.PanacheEntityBase;
@@ -19,7 +19,7 @@ public class Venda extends PanacheEntityBase {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long codigo;
 
-    private LocalDateTime horario;
+   private LocalTime horario;
 
     private BigDecimal valorTotal;
 
@@ -38,8 +38,8 @@ public class Venda extends PanacheEntityBase {
     public Long getCodigo() { return codigo; }
     public void setCodigo(Long codigo) { this.codigo = codigo; }
 
-    public LocalDateTime getHorario() { return horario; }
-    public void setHorario(LocalDateTime horario) { this.horario = horario; }
+    public LocalTime getHorario() { return horario; }
+    public void setHorario(LocalTime horario) { this.horario = horario; }
 
     public BigDecimal getValorTotal() { return valorTotal; }
     public void setValorTotal(BigDecimal valorTotal) { this.valorTotal = valorTotal; }

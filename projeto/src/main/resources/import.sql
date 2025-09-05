@@ -70,16 +70,16 @@ insert into Funcionario (nome, cpf, codigo) values ('Thiago Martins', '101112131
 
 -- TABELA VENDA
 
-insert into Venda (codigo, horario, valorTotal, quantidadeTotal, cliente_codigo, funcionario_codigo) values (1, 23:00, 24.00, 3, 1, 200);
-insert into Venda (codigo, horario, valorTotal, quantidadeTotal, cliente_codigo, funcionario_codigo) values (2, 20:00, 30.00, 5, 2, 250);
-insert into Venda (codigo, horario, valorTotal, quantidadeTotal, cliente_codigo, funcionario_codigo) values (3, 19:00, 25.00, 2, 3, 400);
-insert into Venda (codigo, horario, valorTotal, quantidadeTotal, cliente_codigo, funcionario_codigo) values (4, 20:30, 23.00, 3, 4, 180);
-insert into Venda (codigo, horario, valorTotal, quantidadeTotal, cliente_codigo, funcionario_codigo) values (5, 19:10, 15.00, 6, 5, 210);
-insert into Venda (codigo, horario, valorTotal, quantidadeTotal, cliente_codigo, funcionario_codigo) values (6, 23:29, 24.00, 8, 6, 260);
-insert into Venda (codigo, horario, valorTotal, quantidadeTotal, cliente_codigo, funcionario_codigo) values (7, 13:14, 26.00, 9, 7, 420);
-insert into Venda (codigo, horario, valorTotal, quantidadeTotal, cliente_codigo, funcionario_codigo) values (8, 09:00, 14.00, 4, 8, 185);
-insert into Venda (codigo, horario, valorTotal, quantidadeTotal, cliente_codigo, funcionario_codigo) values (9, 12:00, 46.00, 6, 9, 205);
-insert into Venda (codigo, horario, valorTotal, quantidadeTotal, cliente_codigo, funcionario_codigo) values (10, 14:15, 76.00, 3, 10, 350);
+insert into Venda (codigo, horario, valorTotal, quantidadeTotal, cliente_codigo, funcionario_codigo) values (1, '23:00', 24.00, 3, 1, 200);
+insert into Venda (codigo, horario, valorTotal, quantidadeTotal, cliente_codigo, funcionario_codigo) values (2, '20:00', 30.00, 5, 2, 250);
+insert into Venda (codigo, horario, valorTotal, quantidadeTotal, cliente_codigo, funcionario_codigo) values (3, '19:00', 25.00, 2, 3, 400);
+insert into Venda (codigo, horario, valorTotal, quantidadeTotal, cliente_codigo, funcionario_codigo) values (4, '20:30', 23.00, 3, 4, 180);
+insert into Venda (codigo, horario, valorTotal, quantidadeTotal, cliente_codigo, funcionario_codigo) values (5, '19:10', 15.00, 6, 5, 210);
+insert into Venda (codigo, horario, valorTotal, quantidadeTotal, cliente_codigo, funcionario_codigo) values (6, '23:29', 24.00, 8, 6, 260);
+insert into Venda (codigo, horario, valorTotal, quantidadeTotal, cliente_codigo, funcionario_codigo) values (7, '13:14', 26.00, 9, 7, 420);
+insert into Venda (codigo, horario, valorTotal, quantidadeTotal, cliente_codigo, funcionario_codigo) values (8, '09:00', 14.00, 4, 8, 185);
+insert into Venda (codigo, horario, valorTotal, quantidadeTotal, cliente_codigo, funcionario_codigo) values (9, '12:00', 46.00, 6, 9, 205);
+insert into Venda (codigo, horario, valorTotal, quantidadeTotal, cliente_codigo, funcionario_codigo) values (10, '14:15', 76.00, 3, 10, 350);
 
 
 -- TABELA ITEMVENDA
