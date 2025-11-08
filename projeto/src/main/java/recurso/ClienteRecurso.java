@@ -1,7 +1,6 @@
 package recurso;
 import java.util.List;
 import entidades.Cliente;
-import io.quarkus.panache.common.impl.GenerateBridge;
 import jakarta.transaction.Transactional;
 import jakarta.ws.rs.GET;
 import jakarta.ws.rs.POST;
